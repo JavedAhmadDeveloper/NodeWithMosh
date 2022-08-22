@@ -2,9 +2,9 @@ const EventEmitter = require("events");
 const emitter = new EventEmitter();
 //Listener for event
 
-emitter.on("messagedLogged", function () {
-  console.log("Listener called");
+emitter.on("messagedLogged", (e) => {
+  console.log("Listener called", e);
 });
 
 //Raise an event
-emitter.emit("messagedLogged");
+emitter.emit("messagedLogged", { id: 1, url: "https://" });
