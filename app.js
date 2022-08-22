@@ -13,5 +13,9 @@
 
 // console.log(module);
 
-// const logger = require("./logger");
-// logger.log("this is a message");
+const Logger = require("./logger");
+const logger = new Logger();
+logger.on("messagedLogged", (e) => {
+  console.log("Listener called", e);
+});
+logger.log("this is a message");

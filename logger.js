@@ -1,4 +1,9 @@
-function log(message) {
-  console.log(message);
+const EventEmitter = require("events");
+
+class Logger extends EventEmitter {
+  log(message) {
+    console.log(message);
+    this.emit("messagedLogged", { id: 1, url: "https://" });
+  }
 }
-module.exports.log = log;
+module.exports = Logger;
