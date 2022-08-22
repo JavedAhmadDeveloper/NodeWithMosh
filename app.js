@@ -31,10 +31,10 @@
 //   `${freeMemory} is available from ${totalMemory} of OStype ${type} has Up time of ${uptime}`
 // );
 
-const fs = require("fs");
-// let files = fs.readdirSync("./");
-// console.log(files);
-fs.readdir("./", function (err, files) {
-  if (err) console.log("error --> ", err);
-  else console.log("Result --> ", files);
-});
+// const fs = require("fs");
+// // let files = fs.readdirSync("./");
+// // console.log(files);
+// fs.readdir("./", function (err, files) {
+//   if (err) console.log("error --> ", err);
+//   else console.log("Result --> ", files);
+// });
