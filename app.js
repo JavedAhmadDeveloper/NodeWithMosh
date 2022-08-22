@@ -15,26 +15,3 @@
 
 // const logger = require("./logger");
 // logger.log("this is a message");
-
-// const path = require("path");
-// var pathObj = path.parse(__filename);
-
-// console.log(pathObj);
-
-// const os = require("os");
-
-// var totalMemory = os.totalmem();
-// var freeMemory = os.freemem();
-// var type = os.type();
-// var uptime = os.uptime();
-// console.log(
-//   `${freeMemory} is available from ${totalMemory} of OStype ${type} has Up time of ${uptime}`
-// );
-
-// const fs = require("fs");
-// // let files = fs.readdirSync("./");
-// // console.log(files);
-// fs.readdir("./", function (err, files) {
-//   if (err) console.log("error --> ", err);
-//   else console.log("Result --> ", files);
-// });
